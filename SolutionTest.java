@@ -59,14 +59,17 @@ findLongestNode()
     @Test
     public void findLongestNode() {
         Solution solution = new Solution();
-        //感觉有哪里不太对呢，此方法输入一个节点和它的连接表，应该返回和此节点距离最远的节点。
-        //那么输入0节点为什么返回的是0节点呢，这个树上只有一个点吗
+
+        // 编写测试用例
+        // ...
+
+        // 示例测试用例
         int[] parent = new int[4];
-        List<Integer>[] adj = new List[4];//这里好像不对吧，adj不应该是原树的邻接表吗，本测试用例没有写明树的形式呀，这是一个空树
+        List<Integer>[] adj = new List[4];
         for (int i = 0; i < 4; i++) {
             adj[i] = Arrays.asList();
         }
         int longestNode = solution.findLongestNode(0, parent, adj);
         assertEquals(0, longestNode);
     }
-}//Luo修改
+}
